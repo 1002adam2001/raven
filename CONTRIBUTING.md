@@ -1,5 +1,14 @@
 # Contributing to Raven
 
+## Checkout and build instructions
+
+1. Clone Raven from github at https://github.com/raven-ml/raven.git
+2. Create a switch specific to this project. `opam switch create raven_switch  ocaml-base-compiler.5.2.0` 
+3. Update the shell environment to use this switch `$(opam env --switch=raven_switch)`
+4. Install required packages: From inside the raven directory execute `opam install .` , `opam install alcotest` , `opam install mdx`
+5. Build a package such as nx. `dune build nx`
+6. Confirm basic functionality by executing an example such as `dune exec nx/example/01-hello-world/hello_world.exe`
+
 ## Documentation Style
 
 ### Overview
